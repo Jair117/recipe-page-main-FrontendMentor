@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    /*COLORS*/
+    --White: hsl(0, 0%, 100%);
+    --Light-Peach: hsl(30, 54%, 90%);
+    --Light-Beige: hsl(30, 18%, 87%);
+    --Dark-Taupe: hsl(30, 10%, 34%);
+    --Dark-Olive-Brown: hsl(24, 5%, 18%);
+    --Reddish-Brown: hsl(14, 45%, 36%);
+    --Deep-Burgundy: hsl(332, 51%, 32%);
+    --Light-Pink-Tint: hsl(330, 100%, 98%);
+
+    /*FONT FAMILY*/
+    --Young-Serif:  "Young Serif", serif;
+    --Outfit: "Outfit", serif;
+
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var( --Light-Peach);
+    /*height: 100vh;*/
+}
+
+.main-card-container {
+    width: 51%;
+    height: 87%;
+    padding: 40px;
+    margin: 9% 0;
+    background-color: var(--White);
+    border-radius: 20px;
+
+}
+
+.main-card-container__figure {
+    background-image: url(/assets/images/image-omelette.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+.main-card-container__h1 {
+    font-family: var(--Young-Serif);
+    font-size: 2.2rem;
+}
+
+.main-card-container__section {
+    margin-top: 30px;
+    line-height: 2;
+    font-family: var(--Outfit);
+}
+
+.main-card-container__hr {
+    margin-top: 35px;
+}
+
+.main-card-container__h2 {
+    font-family: var(--Young-Serif);
+    font-weight: 400;
+    color: var(--Reddish-Brown);
+}
+
+
+.main-card-container__h3 {
+    font-family: var(--Outfit);
+    color: var(--Deep-Burgundy);
+}
+
+.main-card-container__list {
+    font-family: var(--Outfit);
+    color: var(--Dark-Taupe);
+    padding: 18px;
+    font-size: .95rem;
+    list-style-position: outside; /* Deja los números fuera del contenido */
+    padding-left: 10px;
+}
+
+.main-card-container__list ::marker {
+    color:  var(--Reddish-Brown);
+    font-weight: bold;
+}
+
+.main-card-container__item {
+    position: relative;
+    padding-left: 25px;
+}
+
+.main-card-container__p {
+    font-size: 0.95rem;
+    color: var(--Dark-Taupe);
+}
+
+.main-card-container__table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 200px;
+    margin-top: 15px;
+}
+
+.main-card-container__row {
+    border: 1px solid transparent;
+}
+.main-card-container__row:not(:last-child){
+    border-bottom: 1px solid var(--Light-Beige);
+}
+
+.main-card-container__section--header {
+    margin-top: 0;
+} 
+
+.main-card-container__section--preparation-time {
+    background-color: var(--Light-Pink-Tint);
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+
+.main-card-container__list--preparation-time ::marker {
+    color: var(--Deep-Burgundy);
+}
+
+.main-card-container--type {
+    padding-left: 25px;
+    color: var(--Dark-Taupe);
+    width: 50%;
+}
+
+.main-card-container--value {
+    color: var(--Reddish-Brown);
+    font-weight: bold;
+    padding-left: 6px;
+}
+
+.attribution { font-size: px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
