@@ -29,7 +29,6 @@ body {
     justify-content: center;
     align-items: center;
     background-color: var( --Light-Peach);
-    /*height: 100vh;*/
 }
 
 .main-card-container {
@@ -39,7 +38,6 @@ body {
     margin: 9% 0;
     background-color: var(--White);
     border-radius: 20px;
-
 }
 
 .main-card-container__figure {
@@ -51,11 +49,15 @@ body {
     height: 300px;
     margin-bottom: 30px;
     border-radius: 20px;
+    top: 0;
+    left: 0;
+
 }
 
 .main-card-container__h1 {
     font-family: var(--Young-Serif);
     font-size: 2.2rem;
+    /*margin-top: 150px;*/
 }
 
 .main-card-container__section {
@@ -66,6 +68,7 @@ body {
 
 .main-card-container__hr {
     margin-top: 35px;
+    border: 1px solid var(--Light-Peach);
 }
 
 .main-card-container__h2 {
@@ -85,7 +88,7 @@ body {
     color: var(--Dark-Taupe);
     padding: 18px;
     font-size: .95rem;
-    list-style-position: outside; /* Deja los números fuera del contenido */
+    list-style-position: outside; /* Leave the numbers out of the content */
     padding-left: 10px;
 }
 
@@ -146,3 +149,37 @@ body {
 
 .attribution { font-size: px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 428px) {
+    .main-card-container {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        position: relative;
+    }
+
+    .main-card-container__figure {
+        position: absolute;
+        height: 170px;
+        border-radius: 0;
+    }
+
+    
+    .main-card-container__h1 {
+        margin-top: 170px;
+        margin-bottom: 30px;
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .main-card-container__p {
+        font-size: 0.94rem;
+        line-height: 1.5;
+    }
+
+    .main-card-container__item--instructions {
+        line-height: 1.7;
+        font-size: 0.90rem;
+        margin-bottom: 10px;
+    }
+}
